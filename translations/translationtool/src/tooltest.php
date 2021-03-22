@@ -2,7 +2,7 @@
 
 $fakeFileContent = '';
 
-$vueFile = '/var/tmp/forms/src/views/Create.vue';
+$vueFile = './Create.vue';
 // $vueFile = '/var/tmp/nextcloud/spreed/src/components/AdminSettings/HostedSignalingServer.vue';
 
 $vueSource = file($vueFile);

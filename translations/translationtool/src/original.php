@@ -1,5 +1,5 @@
 <?php
-$vueFile = '/var/tmp/forms/src/views/Create.vue';
+$vueFile = './Create.vue';
 // $vueFile = '/var/tmp/nextcloud/spreed/src/components/AdminSettings/HostedSignalingServer.vue';
 
 $fakeFileContent = '';
@@ -31,4 +31,5 @@ foreach (array_keys($matches1) as $k) {
 	$fakeFileContent .= "n('" . '$this->name' . "', '" . preg_replace('/\s+/', ' ', $match1) . "', '" . preg_replace('/\s+/', ' ', $match2) . "');" . PHP_EOL;
 }
 
-error_log(print_r($fakeFileContent, TRUE));
+print_r($fakeFileContent);
+print_r($matches);
